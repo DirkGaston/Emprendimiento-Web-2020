@@ -1,0 +1,12 @@
+.header{
+    display: flex;
+    justify-content: center;
+
+    & object{
+        width: 50%;
+
+        @include phone-view{
+            width: 100%;
+        }
+    }
+}

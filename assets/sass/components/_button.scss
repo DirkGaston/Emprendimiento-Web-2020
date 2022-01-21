@@ -1,0 +1,15 @@
+.button {
+    background-color: $orange;
+    box-shadow: gray 0px 0px 0px 1px;
+    border-radius: 5px;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.9rem;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $white;
+    }
+  }

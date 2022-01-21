@@ -1,0 +1,54 @@
+.navbar { grid-area: nav; }
+.header { grid-area: header; }
+.content { grid-area: main; }
+.courses { grid-area: aside; }
+.footer { grid-area: footer; }
+
+// Grilla
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 2rem;
+}
+
+// Columnas
+
+.navbar{
+    grid-column: 1 / span 12;
+    grid-row: 1 / span 1;
+}
+
+.header{
+    grid-column: 1 / span 12;
+    grid-row: 2 / span 1;
+}
+
+.content{
+    grid-column: 1 / span 6;
+    grid-row: 3 / span 1
+}
+
+@media only screen and (max-width: 576px) {
+    .content {
+      grid-column: 1 / span 12;
+      grid-row: 4 / span 1
+    }
+  }
+
+.courses{
+    grid-column: 7 / span 6;
+    grid-row: 3 / span 1;
+}
+
+@media only screen and (max-width: 576px) {
+    .courses {
+      grid-column: 1 / span 12;
+      grid-row: 5 / span 1;
+    }
+  }
+
+.footer{
+    grid-column: 1 / span 12;
+    grid-row: 4 / span 1;
+}

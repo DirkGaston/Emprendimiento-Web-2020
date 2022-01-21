@@ -1,0 +1,30 @@
+// Media Query Tablet
+
+@mixin tablet-view{
+    @media (max-width:#{$min-tablet}){
+        @content;
+    }
+}
+
+// Media Query Mobile
+
+@mixin phone-view{
+    @media (max-width:#{$min-phone}){
+        @content;
+    }
+}
+
+// Media Query Desktop
+
+@mixin desktop-view{
+    @media (min-width:#{$max-desktop}){
+        @content;
+    }
+}
+
+// Conversor de PX a REM
+
+@mixin px-to-rem($pxValue, $property: "font-size", $standard-size: 16) {
+    #{$property}: $pxValue + px;
+    #{$property}: calc($pxValue / $standard-size) + rem;
+  }

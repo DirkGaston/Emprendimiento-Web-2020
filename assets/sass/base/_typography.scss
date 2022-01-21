@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap');
+
+body{
+    font-family: $poppins;
+}
+
+.navbar__Menu a{
+    font-size: $medium;
+    font-weight: $bold;
+}
+
+.content__Course--text{
+    font-family: $ubuntu;
+    font-weight: $regular;
+    line-height: 2rem;
+}
+
+.courses__Title{
+    text-transform: uppercase;
+}
+
+.courses__Text{
+    font-family: $ubuntu;
+    font-weight: $regular;
+    line-height: 2rem;
+}
+
+input::placeholder{
+    opacity: 75%;
+    font-size: 1rem;
+    font-family: $poppins;
+}
+
+.button{
+    font-size: 1rem;
+    font-family: $poppins;
+    color: $charcoal;
+}

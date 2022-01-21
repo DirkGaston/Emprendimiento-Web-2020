@@ -1,0 +1,39 @@
+.web{
+    width: 50%;
+    transition: all 1s;
+    transition-property: transform;
+}
+
+.web__Gear {
+    animation: rotating 2s linear infinite;
+    transform-origin: 79% 79%
+}
+
+.web__Center{
+    animation: rotating 2s linear infinite;
+    transform-origin: 79% 79%
+}
+
+.web__Code{
+    animation: 2s movement infinite linear alternate;
+}
+
+@keyframes rotating {
+
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes movement {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(30%);
+    }
+}

@@ -1,0 +1,49 @@
+.content{
+    border: 1px solid $charcoal;
+    padding: 1rem;
+    margin-left: 5px;
+
+    @include phone-view{
+        margin: 1rem;
+    }
+
+    &__Course{
+        border: 1px solid lightgray;
+        margin: 5px;
+        padding: 7px;
+
+        &--image{
+            width: 100%;
+        }
+
+        &--icons{
+            display: flex;
+            justify-content: start;
+            list-style: none;
+            padding-left: 0;
+            
+        }
+
+        &--icons li{
+            padding-right: 1rem;
+        }
+    }
+}
+
+.courses{
+    @include phone-view{
+        margin: 1rem !important ;
+        padding: 0;
+
+    }
+}
+
+.courses__Separator{
+    background-color: $charcoal;
+    color: $white;
+    width: 90%;
+    
+}
+
+
+

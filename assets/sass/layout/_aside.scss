@@ -1,0 +1,64 @@
+.courses{
+    border: 1px solid $charcoal;
+    padding-left: 1rem;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__Image{
+        width: 22%;
+        border-radius: 100%;
+        border: 1px solid $charcoal;
+        margin-top: 1rem;
+        
+    }
+
+    &__Socials{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-right: 3rem;
+        font-size: $x-large;
+        width: 15%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    &__Separator{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 2rem;
+        background-color: $charcoal;
+        position: relative;
+        right: 10px;
+        padding-left: 1rem;
+    }
+
+    &__List{
+
+        display: flex;
+        justify-content: left;
+        width: 100%;
+
+        & ul{
+            list-style-type: circle;
+        }
+        
+
+        & li{
+            padding-bottom: 5px;
+        }
+
+        & a{
+            text-decoration: none;
+            font-weight: $regular;
+            
+
+        }
+    }
+    
+}

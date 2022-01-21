@@ -1,0 +1,47 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $ubuntu;
+    background-color: $black;
+    color: $white;
+    padding-inline: 10%;
+    padding-block: 3vh;
+    margin-top: 1rem;
+
+    @include phone-view{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__Rights{
+        @include phone-view{
+            width: 50%;
+            text-align: center;
+        }
+    }
+    
+    &__Links{
+        display: flex;
+        list-style: none;
+        margin: 0;
+
+        @include phone-view{
+            flex-direction: column;
+            align-items: center;
+        }
+
+    & li{
+        @include phone-view{
+            margin-bottom: 1rem;
+        }
+    }
+
+        & a{
+            text-decoration: none;
+            color: $white;
+            padding-right: 3rem;
+            padding-top: 5px;
+        }
+    }
+}
